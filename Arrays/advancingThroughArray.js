@@ -14,12 +14,12 @@ usar.
 
 function advancingThroughArray(array) {
   let max = 0;
-  let last_index = array.length - 1;
+  let lastIndex = array.length - 1;
   for(let i = 0; i < array.length; i++) {
     max = Math.max(max, array[i] + i);
     console.log(max);
   }
-  return max >= last_index;
+  return max >= lastIndex;
 }
 
   array = [3,3,1,0,2,0,1];

@@ -20,5 +20,25 @@ function removeDuplicatedElementsSortedArray(array) {
   return write;
 }
 
+// Time Complexity O(N)
+// Space Complexity O(1)
+function removeDuplicates(array) {
+  // Edge case
+  if(!array.length) {
+    return [];
+  }
+  
+  let index = 1;
+  for(let i = 1; i < array.length; i++) {
+    if(array[i] !== array[i-1]) {
+      array[index++] = array[i];
+    }
+  }
+  
+  console.log(array);
+  console.log(array.slice(0, index));
+  return index;
+}
+
 array = [1,2,2,2,2,3,3,4,5,5,6,6,7];
 console.log(removeDuplicatedElementsSortedArray(array));

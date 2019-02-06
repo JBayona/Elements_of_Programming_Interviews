@@ -42,3 +42,42 @@ function removeDuplicates(array) {
 
 array = [1,2,2,2,2,3,3,4,5,5,6,6,7];
 console.log(removeDuplicatedElementsSortedArray(array));
+
+function removeElements(array, n) {
+if(!array.length) {
+   return [];
+  }
+  
+  let index = 1;
+  for(let i = 1; i < array.length; i++) {
+   if(array[i] !== array[i-1]) {
+     array[index++] = array[i];
+    }
+  }
+  console.log(index);
+  console.log(array.slice(0, index));
+}
+
+array = [1, 1, 2,3, 3, 4, 5, 5, 6];
+n = 5;
+console.log(removeElements(array, n));
+
+// Remove the key, move the elements to the left
+function removeElements(array, n) {
+if(!array.length) {
+   return [];
+  }
+  
+  let index = 0;
+  for(let i = 0; i < array.length; i++) {
+   if(array[i] !== n) {
+     array[index++] = array[i];
+    }
+  }
+  console.log(index);
+  console.log(array.slice(0, index));
+}
+
+array = [1, 1, 2,3, 3, 4, 5, 5, 6];
+n = 5;
+console.log(removeElements(array, n));

@@ -2,7 +2,7 @@
 Tenemos un arreglo en donde representa el valor de stocks al día, debemos calcular cuánto es la mayor ganancia
 que podemos obtener considerando que sólo podemos comprar una vez y vender una vez.
 
-Arreglo temporal de las ganancias por día
+Arreglo temporal de las ganancias por día (tmp)
 */
 
 function buyAndSellStockOnce(stocks) {

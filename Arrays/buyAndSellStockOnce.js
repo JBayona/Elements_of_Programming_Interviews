@@ -6,7 +6,7 @@ Arreglo temporal de las ganancias por día (tmp)
 */
 
 function buyAndSellStockOnce(stocks) {
-let minStockPrice = Number.MAX_SAFE_INTEGER;
+  let minStockPrice = Number.MAX_SAFE_INTEGER;
   let todayStockProfit = 0;
   let maxStockPrice = 0;
   let tmp = [];

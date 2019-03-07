@@ -12,13 +12,13 @@ function buyAndSellStockOnce(stocks) {
   let tmp = [];
   
   for(let i = 0; i < stocks.length; i++) {
-   todayStockProfit = stock[i] - minStockPrice;
+    todayStockProfit = stock[i] - minStockPrice;
     maxStockPrice = Math.max(maxStockPrice, todayStockProfit);
     minStockPrice = Math.min(stock[i], minStockPrice);
     tmp.push(maxStockPrice);
   }
   
-  console.log(tmp);
+  console.log(tmp); // [0, 5, 5, 20, 20, 20, 30, 30, 30, 30]
   return maxStockPrice;
 }
 
